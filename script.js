@@ -19,5 +19,3 @@ window.onscroll = () => {
     }
   });
 };
-
-
