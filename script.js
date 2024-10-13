@@ -19,3 +19,16 @@ window.onscroll = () => {
     }
   });
 };
+const moveup = document.querySelector('#home')
+
+moveup.addEventListener("click", function (e) {
+  e.preventDefault(); // Prevent default jump behavior
+  console.log("clicked on arrow icon");
+  const targetId = document.querySelector("#home");
+  console.log(targetId)
+  // Scroll to the target section smoothly
+  window.scrollTo({
+    top: targetId.offsetTop,
+    behavior: "smooth",
+  });
+});
